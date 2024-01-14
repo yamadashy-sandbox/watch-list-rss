@@ -1,4 +1,4 @@
-import { FEED_INFO_LIST } from '../resources/feed-info-list';
+import { fetchFeedInfoList } from '../resources/feed-info-list';
 import { FeedCrawler } from './utils/feed-crawler';
 import { FeedGenerator } from './utils/feed-generator';
 import * as path from 'path';
@@ -20,6 +20,7 @@ const feedValidator = new FeedValidator();
 const feedStorer = new FeedStorer();
 
 (async () => {
+  const FEED_INFO_LIST = await fetchFeedInfoList();
   // フィード取得、後処理
   const feeds = await feedCrawler.fetchFeedsAsync(FEED_INFO_LIST, FEED_FETCH_CONCURRENCY);
   const allFeedItems = feedCrawler.aggregateFeeds(feeds, FILTER_ARTICLE_DATE);

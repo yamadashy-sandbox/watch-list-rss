@@ -17,6 +17,37 @@ const createFeedInfoList = (feedInfoTuples: [label: string, url: string, flags?:
   return feedInfoList;
 };
 
+export const fetchFeedInfoList = async (): Promise<FeedInfo[]> => {
+  type FeedItem = {
+    url: string;
+    feeds: string[];
+  };
+  // RSSの一覧を取得
+  const response = await fetch('https://jser.info/watch-list/data/opml-list.json');
+  const feedInfoList: FeedItem[] = await response.json();
+  // 特定のドメインは除外する
+  const ExcludedDomains = [
+    // beta的なリリースが埋まりやすいため
+    'github.com',
+  ];
+  // フィードの重複を取り除く
+  const tmpUsedDomainSet = new Set<string>();
+  const feedInfoListWithoutDomains = feedInfoList.filter((feedItem) => {
+    const feedUrl = feedItem.feeds[0];
+    if (!feedUrl) {
+      return false;
+    }
+    const feedHostname = new URL(feedItem.feeds[0]).hostname;
+    if (tmpUsedDomainSet.has(feedHostname) || tmpUsedDomainSet.has(feedUrl)) {
+      return false;
+    }
+    tmpUsedDomainSet.add(feedHostname);
+    tmpUsedDomainSet.add(feedUrl);
+    // remove duplicate domain
+    return !ExcludedDomains.includes(feedHostname);
+  });
+  return createFeedInfoList(feedInfoListWithoutDomains.map((feedItem) => [feedItem.url, feedItem.feeds[0]]));
+};
 // フィード情報一覧。アルファベット順
 export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   // ['企業名・製品名など', 'RSS/AtomフィードのURL'],
