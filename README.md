@@ -20,7 +20,7 @@ JSer.info Watch Listは、JSer.infoで2年以内に紹介したサイトをま�
 4. [jser/watch-list-rss](https://github.com/jser/watch-list-rss): watch-listのサイトごとのRSSを取得、結果を一つのRSSフィードにまとめる
 
 ```mermaid
-graph LR
+graph TD
   JSer.info -->|更新| jser/dataset
   jser/dataset -->|更新| jser/watch-list
   jser/watch-list -->|更新| jser/watch-list-rss
