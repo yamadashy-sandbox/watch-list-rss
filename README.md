@@ -14,9 +14,18 @@ JSer.info Watch Listは、JSer.infoで2年以内に紹介したサイトをま�
 
 ## 仕組み
 
-- [jser/dataset](https://github.com/jser/dataset): JSer.infoで紹介したサイトの一覧
-- [jser/watch-list](https://github.com/jser/watch-list): データセットを元にRSSフィードを取得、OPMLを生成
-- [jser/watch-list-rss-feed](https://github.com/jser/watch-list-rss): watch-listのサイトごとのRSSを取得、一つのRSSフィードにまとめる
+1. JSer.infoでサイトを更新する
+2. [jser/dataset](https://github.com/jser/dataset): JSer.infoで紹介したサイトの一覧を扱うデータセット
+3. [jser/watch-list](https://github.com/jser/watch-list): データセットを元にRSSフィードを取得、OPMLを生成
+4. [jser/watch-list-rss](https://github.com/jser/watch-list-rss): watch-listのサイトごとのRSSを取得、結果を一つのRSSフィードにまとめる
+
+```mermaid
+graph LR
+  JSer.info -->|更新| jser/dataset
+  jser/dataset -->|更新| jser/watch-list
+  jser/watch-list -->|更新| jser/watch-list-rss
+  jser/watch-list-rss -->|更新| RSSフィード
+```
 
 ----
 
