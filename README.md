@@ -14,8 +14,8 @@ JSer.info Watch Listは、JSer.infoで2年以内に紹介したサイトをま�
 
 ## 仕組み
 
-1. JSer.infoでサイトを更新する
-2. [jser/dataset](https://github.com/jser/dataset): JSer.infoで紹介したサイトの一覧を扱うデータセット
+1. JSer.infoでサイトを紹介する
+2. [jser/dataset](https://github.com/jser/dataset): JSer.infoで紹介したサイトの一覧を扱うデータセットが更新される
 3. [jser/watch-list](https://github.com/jser/watch-list): データセットを元にRSSフィードを取得、OPMLを生成
 4. [jser/watch-list-rss](https://github.com/jser/watch-list-rss): watch-listのサイトごとのRSSを取得、結果を一つのRSSフィードにまとめる
 
