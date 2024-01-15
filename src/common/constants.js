@@ -28,7 +28,7 @@ module.exports = {
 
   // Google Analytics系。フォークして使う際は値を空にするか書き換えてください
   googleSiteVerification: '',
-  globalSiteTagKey: '',
+  globalSiteTagKey: 'G-Q66PHF829Y',
   // フィードの取得などに使う UserAgent
   requestUserAgent: 'facebookexternalhit/1.1; jser/watch-list-rss',
 
