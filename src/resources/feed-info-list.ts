@@ -114,6 +114,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['Finatext', 'https://medium.com/feed/finatext'],
   ['Findy', 'https://findy-code.io/engineer-lab/rss'],
   ['Flatt Security', 'https://blog.flatt.tech/feed'],
+  ['FLYWHEEL', 'https://www.flywheel.jp/topics-tag/tech/feed/'],
   ['Fracton', 'https://tech.fracton.ventures/feed'],
   ['Fusic', 'https://tech.fusic.co.jp/rss.xml'],
   ['G-gen', 'https://blog.g-gen.co.jp/feed'],
@@ -147,7 +148,6 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['IDCフロンティア', 'https://blog.idcf.jp/feed'],
   ['IIJ', 'https://eng-blog.iij.ad.jp/feed'],
   ['IVRy', 'https://zenn.dev/p/ivry/feed', [FLAG_ZENN_PUBLICATION]],
-  ['JBCC', 'https://jbcc-tech.hatenablog.com/feed'],
   ['JMDC', 'https://techblog.jmdc.co.jp/feed'],
   ['JTP', 'https://tech-blog.jtp.co.jp/feed'],
   ['JX通信社', 'https://tech.jxpress.net/feed'],
@@ -270,7 +270,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['TechTrain', 'https://zenn.dev/techtrain/feed'],
   ['Tier IV', 'https://medium.com/feed/tier-iv-tech-blog/tagged/tech-blog'],
   ['Tokyo Otaku Mode', 'https://blog.otakumode.com/atom.xml'],
-  ['Ubie', 'https://zenn.dev/ubie/feed'],
+  ['Ubie', 'https://zenn.dev/p/ubie_dev/feed', [FLAG_ZENN_PUBLICATION]],
   ['UnReact', 'https://zenn.dev/unreact/feed'],
   ['Unipos', 'https://fringeneer.hatenablog.com/feed'],
   ['Uzabase', 'https://tech.uzabase.com/feed'],
@@ -343,6 +343,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['ゆめみ', 'https://zenn.dev/p/yumemi_inc/feed'],
   ['アイキューブドシステムズ', 'https://tech.i3-systems.com/feed'],
   ['アイスタイル', 'https://techblog.istyle.co.jp/feed'],
+  ['アイデミー', 'https://zenn.dev/p/aidemy/feed', [FLAG_ZENN_PUBLICATION]],
   ['アイプランニング', 'https://iplanning.hatenablog.jp/feed'],
   ['アイレット', 'https://zenn.dev/p/iret/feed', [FLAG_ZENN_PUBLICATION]],
   ['アカツキ', 'https://hackerslab.aktsk.jp/feed'],
@@ -394,7 +395,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['カラビナテクノロジー', 'https://zenn.dev/p/karabiner_inc/feed', [FLAG_ZENN_PUBLICATION]],
   ['カンムテック', 'https://tech.kanmu.co.jp/feed'],
   ['ガイアックス', 'https://gaiax.hatenablog.com/feed'],
-  ['キカガク', 'https://blog.kikagaku.co.jp/feed/'],
+  ['キカガク', 'https://www.kikagaku.co.jp/kikagaku-blog/feed/'],
   ['キッチハイク', 'https://tech.kitchhike.com/feed'],
   ['キュービック', 'https://cuebic.co.jp/tech-blog/feed'],
   ['クイック', 'https://aimstogeek.hatenablog.com/feed'],
@@ -460,7 +461,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['ダンクハーツ', 'https://dhe.dank-hearts.net/m/m18705e344ee6/rss'],
   ['テクニカルエージェント', 'https://tracl.cloud/archives/engineerblog/feed'],
   ['テコテック', 'https://tec.tecotec.co.jp/feed'],
-  ['テックタッチ', 'https://tech.techtouch.jp/feed'],
+  ['テックタッチ', 'https://techtouch.hatenablog.jp/feed'],
   ['テックファーム', 'https://www.techfirm.co.jp/blog/?feed=rss2'],
   ['テラーノベル', 'https://zenn.dev/p/tellernovel_inc/feed', [FLAG_ZENN_PUBLICATION]],
   ['ディーネット', 'https://blog.denet.co.jp/feed/'],
@@ -574,7 +575,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['リクルートコミュニケーションズ', 'https://blog.recruit.co.jp/rco/feed.xml'],
   ['リクルートテクノロジーズ', 'https://blog.recruit.co.jp/rtc/feed/'],
   ['リクルートマーケティングパートナーズ', 'https://blog.recruit.co.jp/rmp/feed/'],
-  ['リクルートライフスタイル', 'https://engineer.recruit-lifestyle.co.jp/techblog/feed.xml'],
+  ['リクルートライフスタイル', 'https://blog.recruit.co.jp/rls/feed.xml'],
   ['リサーチ・アンド・イノベーション', 'https://rni-dev.hatenablog.com/feed'],
   ['リゾーム', 'https://tech.rhizome-e.com/feed'],
   ['リンカーズ', 'https://linkers.hatenablog.com/feed'],
@@ -658,6 +659,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
  * ['FLINTERS', 'https://labs.septeni.co.jp/feed'],
  * ['crispy', 'https://blog.crispy-inc.com/feed'],
  * ['スタートアップテクノロジー', 'https://startup-technology.com/feed'],
+ * ['JBCC', 'https://jbcc-tech.hatenablog.com/feed'],
  *
  * 406
  * ['AsiaQuest', 'https://techblog.asia-quest.jp/rss.xml'],
@@ -674,10 +676,6 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
  * ['スペースマーケット', 'https://blog.spacemarket.com/category/code/feed/'],
  * ['エムアールピー', 'https://mrp-net.co.jp/tech_blog/feed'],
  * ['キャスレーコンサルティング', 'https://www.casleyconsulting.co.jp/blog/engineer/feed/'],
- *
- * Error: Invalid character in entity name
- * ['Ubie', 'https://zenn.dev/p/ubie_dev', [FLAG_ZENN_PUBLICATION]],
- * ['アイデミー', 'https://zenn.dev/p/aidemy', [FLAG_ZENN_PUBLICATION]],
  *
  * pubDate なし
  * ['リクルート', 'https://engineers.recruit-jinji.jp/techblog/feed/']
