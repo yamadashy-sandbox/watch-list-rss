@@ -29,6 +29,8 @@ export const fetchFeedInfoList = async (): Promise<FeedInfo[]> => {
   const ExcludedDomains = [
     // beta的なリリースが埋まりやすいため
     'github.com',
+    // https://github.com/jser/watch-list-rss/issues/1
+    "www.aha.io"
   ];
   // フィードの重複を取り除く
   const tmpUsedDomainSet = new Set<string>();
