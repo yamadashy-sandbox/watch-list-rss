@@ -5,6 +5,7 @@ import * as path from 'path';
 import { FeedStorer } from './utils/feed-storer';
 import { to } from 'await-to-js';
 import { FeedValidator } from './utils/feed-validator';
+import { logger } from './utils/logger';
 
 const FEED_FETCH_CONCURRENCY = 50;
 const FEED_OG_FETCH_CONCURRENCY = 20;
@@ -34,6 +35,11 @@ const feedStorer = new FeedStorer();
     ]),
   );
   if (errorFetchFeedData) {
+    logger.error(
+      new Error('Failed to fetch feed data.', {
+        cause: errorFetchFeedData,
+      }),
+    );
     throw new Error('フィード関連データの取得に失敗しました');
   }
   const [allFeedItemOgsResultMap, allFeedItemHatenaCountMap, feedBlogOgsResultMap] = results;
@@ -60,16 +66,24 @@ const feedStorer = new FeedStorer();
     );
   }
 
-  // ファイル出力、画像キャッシュ
-  const [errorStoreFeed] = await to(
-    Promise.all([
-      feedStorer.storeFeeds(outputFeedSet, STORE_FEEDS_DIR_PATH),
-      feedStorer.storeBlogFeeds(feeds, ogsResultMap, allFeedItemHatenaCountMap, STORE_BLOG_FEEDS_DIR_PATH),
-    ]),
-  );
-  if (errorStoreFeed) {
-    throw new Error('ファイル出力に失敗しました', {
-      cause: errorStoreFeed,
+  try {
+    // ファイル出力、画像キャッシュ
+    const [errorStoreFeed] = await to(
+      Promise.all([
+        feedStorer.storeFeeds(outputFeedSet, STORE_FEEDS_DIR_PATH),
+        feedStorer.storeBlogFeeds(feeds, ogsResultMap, allFeedItemHatenaCountMap, STORE_BLOG_FEEDS_DIR_PATH),
+      ]),
+    );
+    if (errorStoreFeed) {
+      throw new Error('ファイル出力に失敗しました', {
+        cause: errorStoreFeed,
+      });
+    }
+  } catch (e) {
+    const error = new Error('Failed to store feeds.', {
+      cause: e,
     });
+    console.error(error);
+    throw error;
   }
 })();

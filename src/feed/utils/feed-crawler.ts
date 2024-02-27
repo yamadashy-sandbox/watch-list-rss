@@ -273,6 +273,7 @@ export class FeedCrawler {
               logger.warn(`[fetch-feed-item-og] retry ${feedItem.link}`);
             }
 
+            logger.info("[fetch-feed-item-og] start fetch", feedItem.link);
             return FeedCrawler.fetchOgsResult(feedItem.link);
           }),
         );
