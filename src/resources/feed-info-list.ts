@@ -58,6 +58,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['207', 'https://tech.207-inc.com/feed'],
   ['ABEJA', 'https://tech-blog.abeja.asia/feed'],
   ['ACES', 'https://tech.acesinc.co.jp/feed'],
+  ['AI Shift', 'https://www.ai-shift.co.jp/techblog/feed'],
   ['AI inside', 'https://note.com/aiinside_tech/rss'],
   ['AIREV', 'https://zenn.dev/airev/feed'],
   ['ANDPAD', 'https://tech.andpad.co.jp/feed'],
@@ -66,6 +67,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['Adways', 'https://blog.engineer.adways.net/feed'],
   ['Aiming', 'https://developer.aiming-inc.com/feed/'],
   ['AppBrew', 'https://tech.appbrew.io/feed'],
+  ['AsiaQuest', 'https://techblog.asia-quest.jp/rss.xml'],
   ['Assured', 'https://tech.assured.jp/feed'],
   ['BABYJOB', 'https://zenn.dev/p/babyjob/feed', [FLAG_ZENN_PUBLICATION]],
   ['BASE', 'https://devblog.thebase.in/feed'],
@@ -86,7 +88,6 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['CData Software', 'https://www.cdatablog.jp/feed'],
   ['CHUGAI DIGITAL', 'https://note.chugai-pharm.co.jp/m/mdaeaf24de472/rss'],
   ['COOSY', 'https://coosy.co.jp/blog/category/web-development/feed/'],
-  ['CROOZ SHOPLIST', encodeURI('https://crooz.co.jp/recruit_group/blog/category/テックブログ/feed/')],
   ['CROOZ', 'https://croozblog.hatenablog.com/feed'],
   ['CULTA', 'https://techblog.culta.jp/feed'],
   ['CastingONE', 'https://zenn.dev/p/castingone_dev/feed', [FLAG_ZENN_PUBLICATION]],
@@ -111,12 +112,12 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['ENECHANGE', 'https://zenn.dev/p/enechange_blog/feed', [FLAG_ZENN_PUBLICATION]],
   ['Emotion Tech', 'https://tech.emotion-tech.co.jp/feed'],
   ['Eureka', 'https://medium.com/feed/eureka-engineering'],
+  ['FLYWHEEL', 'https://www.flywheel.jp/topics-tag/tech/feed/'],
   ['FiNC', 'https://medium.com/feed/finc-engineering'],
   ['Filot', 'https://filot-nextd2.hatenablog.com/feed'],
   ['Finatext', 'https://medium.com/feed/finatext'],
-  ['Findy', 'https://findy-code.io/engineer-lab/rss'],
+  ['Findy', 'https://tech.findy.co.jp/feed'],
   ['Flatt Security', 'https://blog.flatt.tech/feed'],
-  ['FLYWHEEL', 'https://www.flywheel.jp/topics-tag/tech/feed/'],
   ['Fracton', 'https://tech.fracton.ventures/feed'],
   ['Fusic', 'https://tech.fusic.co.jp/rss.xml'],
   ['G-gen', 'https://blog.g-gen.co.jp/feed'],
@@ -129,6 +130,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['GMOリサーチ', 'https://gmor-sys.com/feed/'],
   ['GREE', 'https://labs.gree.jp/blog/feed/'],
   ['GRIPHONE', 'https://tech.griphone.co.jp/feed/'],
+  ['GROWTH VERSE', 'https://growth-verse.hatenablog.jp/feed'],
   ['Game Server Services', 'https://gs2.hatenablog.com/feed'],
   ['GameWith', 'https://tech.gamewith.co.jp/feed'],
   ['GiftX', 'https://zenn.dev/p/giftx_blog/feed', [FLAG_ZENN_PUBLICATION]],
@@ -144,7 +146,6 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['HRBrain', 'https://zenn.dev/p/hrbrain/feed', [FLAG_ZENN_PUBLICATION]],
   ['Hajimari', 'https://tech.hajimari.inc/feed'],
   ['HashPort', 'https://tech.hashport.io/feed/'],
-  ['HiCustomer', 'https://tech.hicustomer.jp/index.xml'],
   ['HiTalent', 'https://medium.com/feed/@hitalent'],
   ['HireRoo', 'https://hireroo.io/rss/IJhPN95WMIcPni1r59Tt'],
   ['IDCフロンティア', 'https://blog.idcf.jp/feed'],
@@ -162,6 +163,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['LAPRAS', 'https://ai-lab.lapras.com/feed/'],
   ['LCL', 'https://techblog.lclco.com/feed'],
   ['LIFULL', 'https://www.lifull.blog/feed'],
+  ['LIG', 'https://liginc.co.jp/technology/feed'],
   ['LINEヤフー', 'https://techblog.lycorp.co.jp/ja/feed/index.xml'],
   ['LIVESENSE', 'https://made.livesense.co.jp/feed'],
   ['LayerX', 'https://tech.layerx.co.jp/feed'],
@@ -217,6 +219,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['Playground', 'https://tech.playground.style/feed/'],
   ['Polestar-ID', 'https://www.psid.co.jp/news/feed/'],
   ['Progate', 'https://tech.prog-8.com/feed'],
+  ['Qiita', 'https://zine.qiita.com/feed/'],
   ['R&D', 'https://zenn.dev/randd/feed'],
   ['READYFOR', 'https://tech.readyfor.jp/feed'],
   ['READYFOR', 'https://zenn.dev/p/readyfor_blog/feed', [FLAG_ZENN_PUBLICATION]],
@@ -258,7 +261,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['Studyplus', 'https://tech.studyplus.co.jp/feed'],
   ['Synamon', 'https://synamon.hatenablog.com/feed'],
   ['Sysdig', 'https://www.scsk.jp/sp/sysdig/rss.xml'],
-  ['TANP', encodeURI('https://www.tanp-blog.com/feed/category/エンジニアブログ')],
+  ['TANP', 'https://www.tanp-blog.com/feed'],
   ['TENTIAL', 'https://tech.tential.jp/feed'],
   ['THECOO', 'https://note.com/thecoo_engineer/rss'],
   ['TOWN', 'https://town.biz/tag/engineer/feed'],
@@ -270,6 +273,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['TechRacho', 'https://techracho.bpsinc.jp/feed'],
   ['TechTrain', 'https://zenn.dev/p/techtrain_blog/feed', [FLAG_ZENN_PUBLICATION]],
   ['TechTrain', 'https://zenn.dev/techtrain/feed'],
+  ['Thinkings', 'https://zenn.dev/thinkings/feed'],
   ['Tier IV', 'https://medium.com/feed/tier-iv-tech-blog/tagged/tech-blog'],
   ['Tokyo Otaku Mode', 'https://blog.otakumode.com/atom.xml'],
   ['Ubie', 'https://zenn.dev/p/ubie_dev/feed', [FLAG_ZENN_PUBLICATION]],
@@ -290,7 +294,6 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['ZOZO', 'https://techblog.zozo.com/feed'],
   ['ZOZO', 'https://zenn.dev/p/zozotech/feed', [FLAG_ZENN_PUBLICATION]],
   ['Zaim', 'https://blog.zaim.co.jp/rss'],
-  ['Zeals', 'https://tech.zeals.co.jp/feed'],
   ['Zenn', 'https://zenn.dev/p/team_zenn/feed', [FLAG_ZENN_PUBLICATION]],
   ['atama plus', 'https://zenn.dev/atamaplus_dev/feed'],
   ['aumo', 'https://techblog.aumo.co.jp/feed'],
@@ -305,7 +308,6 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['freee', 'https://developers.freee.co.jp/feed'],
   ['gaudiy', 'https://techblog.gaudiy.com/feed'],
   ['hacomono', 'https://techblog.hacomono.jp/feed'],
-  ['hokan', 'https://medium.com/feed/@hokan_dev'],
   ['i-Vinci', 'https://www.i-vinci.co.jp/techblog/feed'],
   ['iCARE', 'https://dev.icare.jpn.com/feed/'],
   ['iChain', 'https://ichain.hatenablog.com/feed'],
@@ -389,6 +391,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['オールアバウト', 'https://allabout-tech.hatenablog.com/feed'],
   ['カイユウ', 'https://kai-you-tech.hatenablog.com/feed'],
   ['カウシェ', 'https://note.com/kauche/m/meb1f972d92dc/rss'],
+  ['カカクコム', 'https://kakaku-techblog.com/feed'],
   ['カケハシ', 'https://kakehashi-dev.hatenablog.com/feed'],
   ['カミナシ', 'https://kaminashi-developer.hatenablog.jp/feed'],
   ['カヤック', 'https://techblog.kayac.com/feed'],
@@ -422,6 +425,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['サイオステクノロジー', 'https://tech-lab.sios.jp/feed'],
   ['サイゼント', 'https://cyzennt.co.jp/blog/feed/'],
   ['サイバーエージェント', 'https://developers.cyberagent.co.jp/blog/feed/'],
+  ['サイバーディフェンス研究所', 'https://io.cyberdefense.jp/index.xml'],
   ['サイボウズ Necoチーム', 'https://zenn.dev/p/cybozu_neco/feed', [FLAG_ZENN_PUBLICATION]],
   ['サイボウズ データチーム', 'https://zenn.dev/p/cybozu_data/feed', [FLAG_ZENN_PUBLICATION]],
   ['サイボウズ フロントエンド', 'https://zenn.dev/p/cybozu_frontend/feed', [FLAG_ZENN_PUBLICATION]],
@@ -429,7 +433,6 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['サイボウズ', 'https://blog.cybozu.io/feed'],
   ['サムザップ', 'https://tech.sumzap.co.jp/feed'],
   ['シェアフル', 'https://zenn.dev/sharefull/feed'],
-  ['シタテル', 'https://tech-blog.sitateru.com/feeds/posts/default'],
   ['シナジーマーケティング', 'https://blog.techscore.com/feed'],
   ['シナプス', 'https://tech.synapse.jp/feed'],
   ['シビラ', 'https://zenn.dev/sivira/feed'],
@@ -446,13 +449,14 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['スターフェスティバル', 'https://zenn.dev/p/stafes_blog/feed', [FLAG_ZENN_PUBLICATION]],
   ['スターフェスティバル', 'https://zenn.dev/stafes/feed'],
   ['ストックマーク', 'https://tech.stockmark.co.jp/index.xml'],
+  ['スパイダープラス', 'https://techblog.spiderplus.co.jp/feed'],
   ['スピッカート', 'https://zenn.dev/spicato_inc/feed'],
+  ['スペースマーケット', 'https://blog.spacemarket.com/category/code/feed/'],
   ['スペースリー', 'https://tech.spacely.co.jp/feed'],
   ['スマートキャンプ', 'https://tech.smartcamp.co.jp/feed'],
   ['スマートスタイル', 'https://blog.s-style.co.jp/feed/'],
   ['スマートラウンド', 'https://zenn.dev/p/smartround_dev/feed', [FLAG_ZENN_PUBLICATION]],
   ['スマートラウンド', 'https://zenn.dev/smartround/feed'],
-  ['セキュアスカイ･テクノロジー', 'https://techblog.securesky-tech.com/feed'],
   ['ゼネット', 'https://media.zenet-web.co.jp/feed'],
   ['タイマーズ', 'https://techblog.timers-inc.com/feed'],
   ['タイミー', 'https://tech.timee.co.jp/feed'],
@@ -465,6 +469,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['テックタッチ', 'https://techtouch.hatenablog.jp/feed'],
   ['テックファーム', 'https://www.techfirm.co.jp/blog/?feed=rss2'],
   ['テラーノベル', 'https://zenn.dev/p/tellernovel_inc/feed', [FLAG_ZENN_PUBLICATION]],
+  ['チームラボ　フロントエンド班', 'https://zenn.dev/p/teamlab_fe/feed', [FLAG_ZENN_PUBLICATION]],
   ['ディーネット', 'https://blog.denet.co.jp/feed/'],
   ['デザインワン・ジャパン', 'https://tech.designone.jp/feed'],
   ['デザミス', 'https://zenn.dev/u_motion/feed'],
@@ -513,12 +518,12 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['ピクスタ', 'https://texta.pixta.jp/feed'],
   ['ピリカ', 'https://devblog.pirika.org/feed'],
   ['ファブリカ', 'https://www.fabrica-com.co.jp/techblog/feed/'],
-  ['ファンコミュニケーションズ', 'https://tech-blog.fancs.com/feed'],
   ['ファンタラクティブ', 'https://zenn.dev/funteractive/feed'],
   ['フィードフォース', 'https://developer.feedforce.jp/feed'],
   ['フェンリル', 'https://engineers.fenrir-inc.com/feed'],
   ['フォトシンス', 'https://akerun.hateblo.jp/feed'],
   ['フォージビジョン', 'https://techblog.forgevision.com/feed'],
+  ['フクロウラボ', 'https://developers.fukurou-labo.co.jp/feed/'],
   ['フューチャー', 'https://future-architect.github.io/atom.xml'],
   ['フリュー', 'https://tech.furyu.jp/feed'],
   ['フリークアウト', 'https://backyard.fout.co.jp/feed/'],
@@ -537,7 +542,6 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['ホワイトプラス', 'https://blog.wh-plus.co.jp/feed'],
   ['マイベスト', 'https://zenn.dev/mybest/feed'],
   ['マインディア', 'https://zenn.dev/p/minedia/feed', [FLAG_ZENN_PUBLICATION]],
-  ['マクロミル', 'https://techblog.macromill.com/feed'],
   ['マップボックス・ジャパン', 'https://zenn.dev/p/mapbox_japan/feed', [FLAG_ZENN_PUBLICATION]],
   ['マナリンク', 'https://zenn.dev/manalink/feed'],
   ['マナリンク', 'https://zenn.dev/p/manalink_dev/feed', [FLAG_ZENN_PUBLICATION]],
@@ -574,9 +578,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['ラブグラフ', 'https://zenn.dev/p/lovegraph/feed', [FLAG_ZENN_PUBLICATION]],
   ['ランサーズ', 'https://engineer.blog.lancers.jp/feed/'],
   ['リクルートコミュニケーションズ', 'https://blog.recruit.co.jp/rco/feed.xml'],
-  ['リクルートテクノロジーズ', 'https://blog.recruit.co.jp/rtc/feed/'],
-  ['リクルートマーケティングパートナーズ', 'https://blog.recruit.co.jp/rmp/feed/'],
-  ['リクルートライフスタイル', 'https://blog.recruit.co.jp/rls/feed.xml'],
+  ['リクルートテクノロジーズ', 'https://techblog.recruit.co.jp/rss.xml'],
   ['リサーチ・アンド・イノベーション', 'https://rni-dev.hatenablog.com/feed'],
   ['リゾーム', 'https://tech.rhizome-e.com/feed'],
   ['リンカーズ', 'https://linkers.hatenablog.com/feed'],
@@ -586,6 +588,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['レアゾン', 'https://techblog.reazon.jp/feed'],
   ['レイ・フロンティア', 'https://tech-blog.rei-frontier.jp/feed'],
   ['レコチョク', 'https://techblog.recochoku.jp/feed/atom'],
+  ['レバテック', 'https://zenn.dev/p/levtech/feed', [FLAG_ZENN_PUBLICATION]],
   ['レバレジーズ', 'https://tech.leverages.jp/feed'],
   ['レブコム', 'https://tech.revcomm.co.jp/feed'],
   ['レンジャーシステムズ', 'https://www.ranger-systems.co.jp/ranger-blog/archives/category/tech/feed'],
@@ -600,7 +603,6 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['ワンダープラネット', 'https://developers.wonderpla.net/feed'],
   ['一休', 'https://user-first.ikyu.co.jp/feed'],
   ['分析屋', 'https://note.com/bunsekiya_tech/rss'],
-  ['富士通クラウドテクノロジーズ', 'https://tech.fjct.fujitsu.com/feed'],
   ['富士通研究所', 'https://blog.fltech.dev/feed'],
   ['弁護士ドットコム', 'https://creators.bengo4.com/feed'],
   ['弥生', 'https://tech-blog.yayoi-kk.co.jp/feed'],
@@ -609,6 +611,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
   ['日販テクシード', 'https://techceed-inc.com/engineer_blog/feed/'],
   ['朝日ネット', 'https://techblog.asahi-net.co.jp/feed'],
   ['朝日新聞社', 'https://note.com/asahi_ictrad/rss'],
+  ['東京ガス内製開発チーム', 'https://tech-blog.tokyo-gas.co.jp/feed'],
   ['楽天コマース', encodeURI('https://commerce-engineer.rakuten.careers/feed/category/テック')],
   ['永和システムマネジメント', 'https://blog.agile.esm.co.jp/feed'],
   ['現場サポート', 'https://support.genbasupport.com/techblog/feed/'],
@@ -634,10 +637,6 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
  * できたばかりなので様子見
  * ['Amayz', 'https://blog.amayz.co.jp/?feed=rss2'],
  *
- * パースエラー修正
- * ['Qiita', 'https://zine.qiita.com/'],
- * ['サイバーディフェンス研究所', 'https://io.cyberdefense.jp/index.xml'],
- *
  * 日本語以外が交じるのを解消できたら入れたい
  * ['クラスメソッド', 'https://dev.classmethod.jp/feed'],
  *
@@ -646,10 +645,11 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
  *
  * 403 Forbidden
  * ['Cygames', 'https://tech.cygames.co.jp/feed/'],
- * ['AI Shift', 'https://www.ai-shift.co.jp/techblog/feed'],
  * ['BRANU', 'https://tech.branu.jp/feed'],
  * ['i-plug', 'https://itbl.hatenablog.com/feed'],
  * ['UUUM', 'https://system.blog.uuum.jp/feed'],
+ * ['CROOZ SHOPLIST', encodeURI('https://crooz.co.jp/recruit_group/blog/category/テックブログ/feed/')],
+ * ['マクロミル', 'https://techblog.macromill.com/feed'],
  *
  * 404
  * ['リクルートデータ', 'https://blog.recruit.co.jp/data/index.json'],
@@ -662,22 +662,16 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
  * ['スタートアップテクノロジー', 'https://startup-technology.com/feed'],
  * ['JBCC', 'https://jbcc-tech.hatenablog.com/feed'],
  * ['UnReact', 'https://zenn.dev/unreact/feed'],
- *
- * 406
- * ['AsiaQuest', 'https://techblog.asia-quest.jp/rss.xml'],
- * ['Supership', 'https://www.wantedly.com/stories/s/Supership/rss.xml'],
- * ['Wantedly', 'https://www.wantedly.com/stories/s/wantedly_engineers/rss.xml'],
- *
- * 500
- * ['LIG', 'https://liginc.co.jp/technology/feed'],
- *
- * 503
- * ['フクロウラボ', 'https://developers.fukurou-labo.co.jp/feed/'],
+ * ['Zeals', 'https://tech.zeals.co.jp/feed'],
+ * ['hokan', 'https://medium.com/feed/@hokan_dev'],
  *
  * Error: unable to verify the first certificate
- * ['スペースマーケット', 'https://blog.spacemarket.com/category/code/feed/'],
  * ['エムアールピー', 'https://mrp-net.co.jp/tech_blog/feed'],
  * ['キャスレーコンサルティング', 'https://www.casleyconsulting.co.jp/blog/engineer/feed/'],
+ *
+ * 406
+ * ['Supership', 'https://www.wantedly.com/stories/s/Supership/rss.xml'],
+ * ['Wantedly', 'https://www.wantedly.com/stories/s/wantedly_engineers/rss.xml'],
  *
  * pubDate なし
  * ['リクルート', 'https://engineers.recruit-jinji.jp/techblog/feed/']
@@ -690,6 +684,9 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
  * ['Croooober', 'https://tech.croooober.co.jp/feed'],
  * ['トライステージ', 'https://blog.ddm.tri-stage.jp/feed/'],
  * ['ヒュープロ', 'https://hupro-techblog.hatenablog.com/feed'],
+ * ['ファンコミュニケーションズ', 'https://tech-blog.fancs.com/feed'],
+ * ['HiCustomer', 'https://tech.hicustomer.jp/index.xml'],
+ * ['シタテル', 'https://tech-blog.sitateru.com/feeds/posts/default'],
  *
  * フィードなし。スクレイピング？
  * https://lab.mo-t.com/blog
@@ -707,6 +704,7 @@ export const FEED_INFO_LIST: FeedInfo[] = createFeedInfoList([
  * https://lab.hokadoko.com/news/RTEPiK54
  * https://subthread.co.jp/blog/
  * ['QualiArts', 'https://technote.qualiarts.jp/rss.xml'],
+ * https://securesky-plus.com/engineerblog/
  *
  * 日本語以外
  * https://medium.com/feed/mcdonalds-technical-blog
