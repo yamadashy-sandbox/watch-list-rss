@@ -4,7 +4,6 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
   schedule:
     # NOTE: UTCなので9時間引く
     # 毎週土曜日の午前9時に実行
