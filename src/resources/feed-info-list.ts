@@ -21,37 +21,12 @@ const createFeedInfoList = (feedInfoTuples: FeedInfoTuple[]) => {
 };
 
 export const fetchFeedInfoList = async (): Promise<FeedInfo[]> => {
-  interface FeedItem {
-    url: string;
-    feeds: ValidUrl[];
-  }
-  // RSSの一覧を取得
-  const response = await fetch('https://jser.info/watch-list/data/opml-list.json');
-  const feedInfoList: FeedItem[] = await response.json();
-  // 特定のドメインは除外する
-  const ExcludedDomains = [
-    // beta的なリリースが埋まりやすいため
-    'github.com',
-    // https://github.com/jser/watch-list-rss/issues/1
-    'www.aha.io',
+  return [
+    {
+      label: 'https://www.aha.io/blog/feed.xml',
+      url: 'https://www.aha.io/blog/feed.xml',
+    }
   ];
-  // フィードの重複を取り除く
-  const tmpUsedDomainSet = new Set<string>();
-  const feedInfoListWithoutDomains = feedInfoList.filter((feedItem) => {
-    const feedUrl = feedItem.feeds[0];
-    if (!feedUrl) {
-      return false;
-    }
-    const feedHostname = new URL(feedItem.feeds[0]).hostname;
-    if (tmpUsedDomainSet.has(feedHostname) || tmpUsedDomainSet.has(feedUrl)) {
-      return false;
-    }
-    tmpUsedDomainSet.add(feedHostname);
-    tmpUsedDomainSet.add(feedUrl);
-    // remove duplicate domain
-    return !ExcludedDomains.includes(feedHostname);
-  });
-  return createFeedInfoList(feedInfoListWithoutDomains.map((feedItem) => [feedItem.url, feedItem.feeds[0]]));
 };
 
 /**
